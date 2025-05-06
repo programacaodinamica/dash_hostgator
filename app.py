@@ -4,7 +4,8 @@ import pandas as pd
 
 df = px.data.gapminder()
 
-app = Dash()
+app = Dash(__name__)
+server = app.server
 
 # Requires Dash 2.17.0 or later
 app.layout = [
